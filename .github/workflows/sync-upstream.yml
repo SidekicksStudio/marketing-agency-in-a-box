@@ -1,0 +1,75 @@
+name: Sync upstream changes
+
+on:
+  schedule:
+    - cron: '0 9 * * 1'  # Every Monday at 9am UTC
+  workflow_dispatch:       # Also allows manual trigger from GitHub UI
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Fetch upstream
+        run: |
+          git remote add upstream https://github.com/coreyhaines31/marketingskills.git
+          git fetch upstream main
+
+      - name: Check for upstream changes
+        id: check
+        run: |
+          UPSTREAM_COMMITS=$(git rev-list HEAD..upstream/main --count)
+          echo "upstream_commits=$UPSTREAM_COMMITS" >> $GITHUB_OUTPUT
+          if [ "$UPSTREAM_COMMITS" -gt "0" ]; then
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create sync branch and PR
+        if: steps.check.outputs.has_changes == 'true'
+        run: |
+          BRANCH="sync/upstream-$(date +%Y-%m-%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b $BRANCH
+          git merge upstream/main --no-edit --strategy-option=ours -m "chore: merge upstream changes from coreyhaines31/marketingskills"
+          git push origin $BRANCH
+
+          gh pr create \
+            --title "Upstream sync: coreyhaines31/marketingskills ($(date +%Y-%m-%d))" \
+            --body "$(cat <<'PREOF'
+## Upstream changes available
+
+New commits from [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) are ready to merge.
+
+**Before merging:**
+- Review the diff — focus on `skills/` for new or updated skills
+- Check `tools/` for new integrations or CLIs
+- Our custom skills (`creator-*`, `reddit-outreach`) live in directories that don't exist upstream, so they will not be affected
+- `plugin.json`, `marketplace.json`, and `README.md` may have conflicts — resolve in favour of our versions
+
+**To merge manually instead:**
+\`\`\`bash
+git fetch upstream
+git merge upstream/main
+\`\`\`
+PREOF
+)" \
+            --base main \
+            --head $BRANCH
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: No changes
+        if: steps.check.outputs.has_changes == 'false'
+        run: echo "No upstream changes since last sync."
