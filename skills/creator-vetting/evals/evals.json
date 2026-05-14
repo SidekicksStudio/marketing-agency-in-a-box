@@ -1,0 +1,23 @@
+{
+  "skill": "creator-vetting",
+  "evals": [
+    {
+      "input": "Here's my creator longlist: @fitnesscoach_jane (85k IG), @liftwithkev (22k TikTok), @wellnessworld (310k IG). Vet them for a sports nutrition brand.",
+      "expect": [
+        "Applies the engagement rate benchmarks per platform and tier",
+        "Describes how to check for fake follower signals",
+        "Flags the need to check for competitor brand deals in recent posts",
+        "Produces a vetting scorecard format for each creator",
+        "Gives a SHORTLIST / REVIEW / CUT verdict with reasoning"
+      ]
+    },
+    {
+      "input": "What engagement rate should I expect from a 50k Instagram creator? And how do I tell if their followers are real?",
+      "expect": [
+        "Provides the specific ER benchmark for 10k–100k Instagram tier (3–6%)",
+        "Lists specific fake follower signals (generic comments, sudden follower spikes, low comment-to-like ratio)",
+        "Mentions free tools like HypeAuditor or Social Blade"
+      ]
+    }
+  ]
+}

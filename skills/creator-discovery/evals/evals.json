@@ -1,0 +1,26 @@
+{
+  "skill": "creator-discovery",
+  "evals": [
+    {
+      "input": "I have a skincare brand targeting women 25–40 who are into clean beauty. Find me TikTok and Instagram creators to work with.",
+      "expect": [
+        "Identifies relevant niche (clean beauty, skincare) and sub-niches",
+        "Provides a list of subreddits or hashtags to search",
+        "Recommends creator tiers appropriate for the brand",
+        "Suggests both direct (skincare creators) and adjacent (wellness, lifestyle) creator categories",
+        "Mentions TikTok Creator Marketplace and Instagram as discovery channels",
+        "Produces a structured longlist format"
+      ]
+    },
+    {
+      "input": "Build a creator longlist for a B2B SaaS project management tool targeting startup founders.",
+      "expect": [
+        "Identifies adjacent niches: productivity, startup life, founder content, solopreneur",
+        "Notes that TikTok and YouTube have stronger startup founder communities than Instagram for this use case",
+        "Suggests searching competitor brand mentions as a discovery method",
+        "Recommends micro/mid-tier as the focus tier",
+        "Produces a structured table with capture fields"
+      ]
+    }
+  ]
+}

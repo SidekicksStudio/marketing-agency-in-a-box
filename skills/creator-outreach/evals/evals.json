@@ -1,0 +1,24 @@
+{
+  "skill": "creator-outreach",
+  "evals": [
+    {
+      "input": "I want to reach out to @sarahfit (45k TikTok, fitness niche) about a paid collab for our protein powder brand. Draft an email.",
+      "expect": [
+        "Opens with a specific reference to Sarah's content — not generic flattery",
+        "Explains the brand in 1–2 sentences",
+        "States the offer (paid collab) without overwhelming detail in the first touch",
+        "Has a soft, low-friction CTA",
+        "Does not open with 'Hi, I'm [name] from [brand]'",
+        "Is under 200 words"
+      ]
+    },
+    {
+      "input": "I can't find an email for this TikTok creator. What do I do?",
+      "expect": [
+        "Works through the contact-finding steps in order (bio links, YouTube About tab, tools)",
+        "Provides a short DM template as the fallback",
+        "Notes the DM should be brief — just to establish contact and move to email"
+      ]
+    }
+  ]
+}

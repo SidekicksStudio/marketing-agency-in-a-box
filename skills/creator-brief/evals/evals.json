@@ -1,0 +1,24 @@
+{
+  "skill": "creator-brief",
+  "evals": [
+    {
+      "input": "We just agreed on a deal with a TikTok creator (28k followers, cooking niche) to promote our meal kit service. Write the brief.",
+      "expect": [
+        "Includes all required sections: overview, audience, key message, deliverables, messaging direction, FTC disclosure",
+        "Key message is one sentence",
+        "FTC disclosure is explicit about TikTok's 'Paid partnership' label and verbal/text disclosure requirement",
+        "Deliverables section specifies platform, format, length, due date, go-live date",
+        "Do/Don't list is short — 3–5 items max, not a script",
+        "Leaves creative room for the creator"
+      ]
+    },
+    {
+      "input": "What FTC disclosure is required for a paid Instagram Reel?",
+      "expect": [
+        "Specifies Instagram's 'Paid partnership' tag requirement",
+        "States that #ad or #sponsored must be visible in the caption, not buried in hashtags",
+        "References FTC Endorsement Guidelines"
+      ]
+    }
+  ]
+}

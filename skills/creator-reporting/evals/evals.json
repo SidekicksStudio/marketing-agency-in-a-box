@@ -1,0 +1,25 @@
+{
+  "skill": "creator-reporting",
+  "evals": [
+    {
+      "input": "I'm about to launch a creator campaign with 5 TikTok creators for a DTC skincare brand. How do I set up tracking?",
+      "expect": [
+        "Provides UTM link structure with utm_source, utm_medium, utm_campaign, utm_content",
+        "Recommends unique promo codes per creator as the primary conversion signal",
+        "Explains how to shorten UTM links for TikTok bio use",
+        "Mentions requesting creator's TikTok Insights screenshots",
+        "Sets up the tracking before content goes live"
+      ]
+    },
+    {
+      "input": "My campaign just ended. Here's the data: Creator A spent $400, drove 120k views and 38 promo code uses worth $1,140. Creator B spent $600, drove 85k views and 12 uses worth $360. Write the report.",
+      "expect": [
+        "Calculates ROAS for each creator (Creator A: 2.9x, Creator B: 0.6x)",
+        "Compares engagement rates against platform benchmarks",
+        "Identifies Creator A as top performer, Creator B as underperformer",
+        "Produces a structured wrap report with per-creator breakdown table",
+        "Includes a recommendation on who to renew and what to test next"
+      ]
+    }
+  ]
+}

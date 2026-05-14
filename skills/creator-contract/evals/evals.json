@@ -1,0 +1,25 @@
+{
+  "skill": "creator-contract",
+  "evals": [
+    {
+      "input": "Draft a contract for a $1,500 TikTok + Instagram deal with a creator. 1 TikTok video, 3 IG Stories. 30-day competitor exclusivity. We want to use the content in paid ads.",
+      "expect": [
+        "Includes all deliverables with platform, format, quantity, due dates",
+        "Payment section specifies $1,500 with a payment structure (e.g. 50/50)",
+        "Usage rights section explicitly covers paid advertising use",
+        "Exclusivity clause specifies 30 days and asks for specific competitor names",
+        "FTC compliance clause is included",
+        "Kill fee clause is included",
+        "Includes a disclaimer that this is not legal advice and recommends attorney review"
+      ]
+    },
+    {
+      "input": "What's a fair kill fee for a creator contract?",
+      "expect": [
+        "Explains the tiered kill fee structure (pre-draft vs. post-draft vs. post-live)",
+        "Gives specific percentage ranges (25–50% pre-draft, 50–75% post-draft)",
+        "Explains the logic: protects the creator's time while acknowledging the brand's right to cancel"
+      ]
+    }
+  ]
+}
