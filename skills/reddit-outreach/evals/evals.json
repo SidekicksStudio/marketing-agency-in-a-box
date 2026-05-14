@@ -1,0 +1,33 @@
+{
+  "skill": "reddit-outreach",
+  "evals": [
+    {
+      "input": "I run a tool that helps freelancers track their invoices and follow up on late payments. Where should I be on Reddit and what should I say?",
+      "expect": [
+        "Identifies relevant subreddits (r/freelance, r/freelancers, r/smallbusiness, r/Entrepreneur, r/personalfinance)",
+        "Provides search queries to find threads about late payments and invoice problems",
+        "Drafts a reply that answers the underlying question (how to handle late payments) before mentioning the product",
+        "Includes a disclosure line",
+        "Does not open with a product pitch"
+      ]
+    },
+    {
+      "input": "Here's a Reddit thread: 'I'm so overwhelmed managing 6 client projects at once, I keep dropping balls. Any systems that actually work?' Draft a reply for us. We make project management software for agencies.",
+      "expect": [
+        "Reply leads with actionable advice on managing multiple client projects",
+        "Product mention comes after substantive help is delivered",
+        "Disclosure line is included",
+        "Tone matches a peer helping a peer, not a sales pitch",
+        "Does not open with the product name"
+      ]
+    },
+    {
+      "input": "Give me a set of search queries to find people on Reddit asking about problems our HR onboarding software solves.",
+      "expect": [
+        "Outputs a set of search queries using site:reddit.com patterns",
+        "Queries target pain points (slow onboarding, paperwork, new hire confusion) not just feature keywords",
+        "Includes queries across direct, adjacent, and pain-point subreddit categories"
+      ]
+    }
+  ]
+}
