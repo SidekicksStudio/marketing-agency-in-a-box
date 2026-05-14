@@ -1,0 +1,25 @@
+{
+  "skill": "client-offboarding",
+  "evals": [
+    {
+      "input": "ACME Co isn't renewing after month 3. Help me offboard them properly.",
+      "expect": [
+        "Runs through the full offboarding checklist in order",
+        "Lists all platform access items to transfer or revoke",
+        "Produces the final engagement summary document template",
+        "Recommends requesting a brief exit conversation",
+        "Prompts to ask for a testimonial and case study",
+        "Notes to archive (not delete) the client folder"
+      ]
+    },
+    {
+      "input": "The client is leaving on bad terms — they're unhappy with results. How do I handle the offboarding?",
+      "expect": [
+        "Advises against disappearing or ghosting",
+        "Recommends acknowledging what didn't go well before the client raises it",
+        "Emphasises completing all contractual obligations regardless of relationship quality",
+        "Advises documenting all communications and deliveries in case of dispute"
+      ]
+    }
+  ]
+}

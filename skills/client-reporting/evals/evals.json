@@ -1,0 +1,25 @@
+{
+  "skill": "client-reporting",
+  "evals": [
+    {
+      "input": "Write the April report for ACME Co. Organic traffic up 18%, CVR went from 1.4% to 2.2%, published 3 of 4 planned blog posts, paid CPL missed target ($52 vs $40 target).",
+      "expect": [
+        "Executive summary leads with the most important result and is 3–5 sentences",
+        "Goals vs Results table shows all four metrics with hit/partial/missed status",
+        "Missed CPL goal is acknowledged with an explanation and what changes next month",
+        "Work Completed section lists the blog posts with the partial delivery noted",
+        "Next Period Plan includes specific targets, not vague plans",
+        "Tone is direct — does not bury the CPL miss"
+      ]
+    },
+    {
+      "input": "It was a bad month — nothing performed. How do I write this report?",
+      "expect": [
+        "Advises stating the results plainly in the executive summary without hiding them",
+        "Suggests explaining root causes specifically, not generically",
+        "Recommends leading the next-period plan with concrete changes that address what failed",
+        "Notes that clients respect honesty more than spin"
+      ]
+    }
+  ]
+}

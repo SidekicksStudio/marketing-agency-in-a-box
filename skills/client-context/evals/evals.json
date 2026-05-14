@@ -1,0 +1,30 @@
+{
+  "skill": "client-context",
+  "evals": [
+    {
+      "input": "Load the Nike client.",
+      "expect": [
+        "Reads .agents/clients/nike/product-marketing.md",
+        "Confirms which client is loaded with a brief summary",
+        "Does not ask clarifying questions if the file exists"
+      ]
+    },
+    {
+      "input": "Set up a new client — it's a DTC skincare brand called Lumé.",
+      "expect": [
+        "Creates .agents/clients/lume/ directory structure",
+        "Seeds product-marketing.md, active-campaigns.md, contacts.md, history.md",
+        "Prompts to run client-intake to fill out the context properly",
+        "Uses the slug 'lume' (lowercase, hyphenated)"
+      ]
+    },
+    {
+      "input": "List all our clients.",
+      "expect": [
+        "Reads .agents/clients/ directory",
+        "Lists each client with name, active campaigns, and last activity",
+        "Does not fabricate clients that don't exist in the file system"
+      ]
+    }
+  ]
+}

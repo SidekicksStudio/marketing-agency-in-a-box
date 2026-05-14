@@ -1,0 +1,24 @@
+{
+  "skill": "case-study",
+  "evals": [
+    {
+      "input": "Write a case study for ACME Co. We improved their CVR from 1.1% to 3.4% and tripled their organic traffic in 6 months. They're a B2B SaaS, they've approved us naming them.",
+      "expect": [
+        "Headline leads with the result, not the service",
+        "Snapshot section shows 2–3 key stats prominently",
+        "The Situation section describes ACME's world before — specific, not generic",
+        "What We Did section explains actions connected to goals, not a task list",
+        "Results section leads with numbers then explains their business impact",
+        "Includes a quote placeholder with guidance on what makes a strong testimonial"
+      ]
+    },
+    {
+      "input": "The client won't let us use their name. Can we still write a case study?",
+      "expect": [
+        "Confirms yes — anonymized case studies are still valuable",
+        "Provides the anonymization formula ('a Series B SaaS company in HR tech')",
+        "Notes which details to keep (results, situation, methodology) and which to obscure (company name, specific product details)"
+      ]
+    }
+  ]
+}

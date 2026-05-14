@@ -1,0 +1,24 @@
+{
+  "skill": "agency-proposal",
+  "evals": [
+    {
+      "input": "Write a proposal for ACME Co — they need SEO and email. $4k/month retainer, 3-month minimum. They're a Series A SaaS with declining organic traffic.",
+      "expect": [
+        "The Situation section specifically reflects ACME's context, not generic language",
+        "Deliverables are specific — not just 'SEO' but what it includes",
+        "Out-of-scope items are explicitly listed",
+        "Investment section is clear with $4k/month and 3-month minimum",
+        "Next steps require exactly one action from the client",
+        "Proposal is under 6 pages equivalent"
+      ]
+    },
+    {
+      "input": "The client's budget is $1,500/month but their goal requires at least $4,000. Should I just write the proposal at $1,500?",
+      "expect": [
+        "Advises against silently scoping down without flagging the gap",
+        "Provides language to address the budget-goal mismatch directly in the proposal",
+        "Suggests tiered options or phased approach as alternatives"
+      ]
+    }
+  ]
+}

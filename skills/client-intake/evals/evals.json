@@ -1,0 +1,31 @@
+{
+  "skill": "client-intake",
+  "evals": [
+    {
+      "input": "Run discovery for a new client — they're a B2B SaaS company that helps restaurants manage their inventory.",
+      "expect": [
+        "Presents the full structured questionnaire grouped by section",
+        "Does not ask questions already answered in the prompt",
+        "Covers business, audience, product, current marketing, competition, and engagement sections",
+        "Offers both async questionnaire and discovery call framework modes"
+      ]
+    },
+    {
+      "input": "I just got off a discovery call with a client. Here are my notes: [notes]. Turn this into a client context file.",
+      "expect": [
+        "Produces a completed product-marketing.md in the correct format",
+        "Flags open questions for missing information",
+        "Uses the client's language rather than generic marketing terms",
+        "Includes engagement details section with contacts and communication prefs"
+      ]
+    },
+    {
+      "input": "The client said their budget doesn't match what we'd need to hit their goal. What do I do?",
+      "expect": [
+        "Flags this as a red flag to surface explicitly",
+        "Suggests addressing the gap directly in the intake rather than silently under-delivering",
+        "Provides language for how to raise the conversation"
+      ]
+    }
+  ]
+}

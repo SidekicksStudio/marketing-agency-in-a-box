@@ -1,0 +1,25 @@
+{
+  "skill": "agency-positioning",
+  "evals": [
+    {
+      "input": "Help me define our agency positioning. We're Sidekicks Studio and we use AI agents to run marketing for early-stage startups.",
+      "expect": [
+        "Works through each section of the positioning framework",
+        "Produces a specific one-sentence positioning statement — not generic",
+        "Defines the ICP with company type, stage, situation, and size",
+        "Identifies a genuine differentiator tied to the AI agent structure",
+        "Lists explicit 'what we don't do' items",
+        "Produces pitch versions for different contexts (elevator, cold outreach, proposal)"
+      ]
+    },
+    {
+      "input": "A prospect asks 'what makes you different from other agencies?' What do I say?",
+      "expect": [
+        "Reads .agents/agency.md if it exists",
+        "Returns the pre-built 'what makes you different' pitch from the positioning file",
+        "If agency.md doesn't exist, prompts to run agency-positioning to build it first",
+        "Answer is specific and confident — not 'we treat you like a partner'"
+      ]
+    }
+  ]
+}

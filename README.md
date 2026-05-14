@@ -53,12 +53,15 @@ See each skill's **Related Skills** section for the full dependency map.
 <!-- SKILLS:START -->
 | Skill | Description |
 |-------|-------------|
+| [agency-positioning](skills/agency-positioning/) | Define the agency's own ICP, services, differentiator, and pitches. The foundation for proposals and outreach. Read by the agent before any new business conversation. |
+| [agency-proposal](skills/agency-proposal/) | Write a client-facing proposal or SOW that scopes services, deliverables, timeline, and pricing after client intake. |
 | [ab-testing](skills/ab-testing/) | When the user wants to plan, design, or implement an A/B test or experiment, or build a growth experimentation program.... |
 | [ad-creative](skills/ad-creative/) | When the user wants to generate, iterate, or scale ad creative — headlines, descriptions, primary text, or full ad... |
 | [ads](skills/ads/) | When the user wants help with paid advertising campaigns on Google Ads, Meta (Facebook/Instagram), LinkedIn, Twitter/X,... |
 | [ai-seo](skills/ai-seo/) | When the user wants to optimize content for AI search engines, get cited by LLMs, or appear in AI-generated answers.... |
 | [analytics](skills/analytics/) | When the user wants to set up, improve, or audit analytics tracking and measurement. Also use when the user mentions... |
 | [aso](skills/aso/) | When the user wants to audit or optimize an App Store or Google Play listing. Also use when the user mentions 'ASO... |
+| [case-study](skills/case-study/) | Turn a successful client engagement into a compelling case study for business development. Structures the story as problem-solution-result. |
 | [churn-prevention](skills/churn-prevention/) | When the user wants to reduce churn, build cancellation flows, set up save offers, recover failed payments, or... |
 | [co-marketing](skills/co-marketing/) | When the user wants to find co-marketing partners, plan joint campaigns, or brainstorm partnership opportunities. Use... |
 | [cold-email](skills/cold-email/) | Write B2B cold emails and follow-up sequences that get replies. Use when the user wants to write cold outreach emails,... |
@@ -68,6 +71,11 @@ See each skill's **Related Skills** section for the full dependency map.
 | [content-strategy](skills/content-strategy/) | When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also... |
 | [copy-editing](skills/copy-editing/) | When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the... |
 | [copywriting](skills/copywriting/) | When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages,... |
+| [client-context](skills/client-context/) | Load, switch, and manage context for a specific client. The foundational skill for multi-client agency operation — run this first before any other skill. |
+| [client-contract](skills/client-contract/) | Draft the agency-client MSA or SOW covering scope, payment, IP, revisions, termination, and confidentiality. |
+| [client-intake](skills/client-intake/) | Run structured client discovery — async questionnaire or live call framework — and produce a complete client context file. |
+| [client-offboarding](skills/client-offboarding/) | Wrap a client engagement cleanly with final deliverable handoff, access transfers, engagement summary, and relationship closure. |
+| [client-reporting](skills/client-reporting/) | Produce monthly or weekly performance reports for clients — results, insights, next-period plan, and actions needed. |
 | [creator-brief](skills/creator-brief/) | Draft a creator brief that tells creators exactly what to make, how to make it, and what to avoid — without killing their creativity. Use after a creator agrees to work together. |
 | [creator-contract](skills/creator-contract/) | Draft a modern influencer and creator contract covering deliverables, payment, usage rights, exclusivity, FTC compliance, and kill fee. |
 | [creator-discovery](skills/creator-discovery/) | Find relevant creators on TikTok, Instagram, and YouTube who match a product or service niche. Covers manual search, creator marketplaces, and competitor reverse-engineering. |
@@ -300,6 +308,16 @@ You can also invoke skills directly:
 - `marketing-psychology` - Mental models and psychology
 - `launch` - Product launches and announcements
 - `pricing` - Pricing, packaging, and monetization
+
+### Agency Operations
+- `agency-positioning` — Define the agency's ICP, services, differentiator, and pitches. The agent reads this before any new business conversation.
+- `client-context` — **Start here.** Load or switch between clients; manages the multi-client file structure under `.agents/clients/`
+- `client-intake` — Structured discovery process (async questionnaire or live call framework) that populates the client context file
+- `agency-proposal` — Write proposals and SOWs after intake, before the contract
+- `client-contract` — MSA and retainer agreement governing the agency-client relationship
+- `client-reporting` — Monthly/weekly performance reports delivered to clients
+- `client-offboarding` — Final deliverable handoff, access transfers, and relationship closure
+- `case-study` — Convert successful engagements into portfolio assets immediately at close
 
 ### Creator & Influencer Marketing
 - `creator-discovery` - Find TikTok, Instagram, and YouTube creators by niche (1k+ followers)

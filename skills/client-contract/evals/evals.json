@@ -1,0 +1,26 @@
+{
+  "skill": "client-contract",
+  "evals": [
+    {
+      "input": "Draft a contract for a $3,500/month retainer with Lumé Skincare. 3-month minimum, 30-day notice after that. Agency keeps rights to its templates and frameworks.",
+      "expect": [
+        "Parties section with placeholders for legal names",
+        "Services section references Exhibit A for deliverables",
+        "Payment section states $3,500/month with 15-day payment terms",
+        "Term section states 3-month minimum and 30-day notice for non-renewal",
+        "IP clause distinguishes agency background IP from client-owned work product",
+        "Limitation of liability clause present",
+        "Includes disclaimer that this is not legal advice"
+      ]
+    },
+    {
+      "input": "What should the early termination clause look like for a 6-month retainer at $5k/month?",
+      "expect": [
+        "Recommends requiring payment of remaining fees or a percentage thereof",
+        "Suggests 30-day notice period",
+        "Provides specific clause language",
+        "Notes this protects the agency's revenue during the initial term"
+      ]
+    }
+  ]
+}
