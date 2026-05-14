@@ -68,6 +68,12 @@ See each skill's **Related Skills** section for the full dependency map.
 | [content-strategy](skills/content-strategy/) | When the user wants to plan a content strategy, decide what content to create, or figure out what topics to cover. Also... |
 | [copy-editing](skills/copy-editing/) | When the user wants to edit, review, or improve existing marketing copy, or refresh outdated content. Also use when the... |
 | [copywriting](skills/copywriting/) | When the user wants to write, rewrite, or improve marketing copy for any page — including homepage, landing pages,... |
+| [creator-brief](skills/creator-brief/) | Draft a creator brief that tells creators exactly what to make, how to make it, and what to avoid — without killing their creativity. Use after a creator agrees to work together. |
+| [creator-contract](skills/creator-contract/) | Draft a modern influencer and creator contract covering deliverables, payment, usage rights, exclusivity, FTC compliance, and kill fee. |
+| [creator-discovery](skills/creator-discovery/) | Find relevant creators on TikTok, Instagram, and YouTube who match a product or service niche. Covers manual search, creator marketplaces, and competitor reverse-engineering. |
+| [creator-outreach](skills/creator-outreach/) | Find a creator's business email and draft outreach messages that get replies. Covers email finding, Instagram DMs, TikTok DMs, and YouTube contact. |
+| [creator-reporting](skills/creator-reporting/) | Set up UTM and promo code tracking for creator campaigns and produce end-of-campaign reports showing ROI per creator. |
+| [creator-vetting](skills/creator-vetting/) | Qualify creators before outreach by checking engagement rate, fake follower signals, audience demographics, brand safety, and competitor conflicts. |
 | [cro](skills/cro/) | When the user wants to optimize, improve, or increase conversions on any marketing page or form — including homepage,... |
 | [customer-research](skills/customer-research/) | When the user wants to conduct, analyze, or synthesize customer research. Use when the user mentions "customer... |
 | [directory-submissions](skills/directory-submissions/) | When the user wants to submit their product to startup, SaaS, AI, agent, MCP, no-code, or review directories for... |
@@ -84,6 +90,7 @@ See each skill's **Related Skills** section for the full dependency map.
 | [pricing](skills/pricing/) | When the user wants help with pricing decisions, packaging, or monetization strategy. Also use when the user mentions... |
 | [product-marketing](skills/product-marketing/) | When the user wants to create or update their product marketing context document. Also use when the user mentions... |
 | [programmatic-seo](skills/programmatic-seo/) | When the user wants to create SEO-driven pages at scale using templates and data. Also use when the user mentions... |
+| [reddit-outreach](skills/reddit-outreach/) | Find recent Reddit questions your product answers across relevant subreddits and draft genuinely helpful replies that naturally mention the product without pitching. |
 | [referrals](skills/referrals/) | When the user wants to create, optimize, or analyze a referral program, affiliate program, or word-of-mouth strategy.... |
 | [revops](skills/revops/) | When the user wants help with revenue operations, lead lifecycle management, or marketing-to-sales handoff processes.... |
 | [sales-enablement](skills/sales-enablement/) | When the user wants to create sales collateral, pitch decks, one-pagers, objection handling docs, or demo scripts. Also... |
@@ -103,13 +110,13 @@ Use [npx skills](https://github.com/vercel-labs/skills) to install skills direct
 
 ```bash
 # Install all skills
-npx skills add coreyhaines31/marketingskills
+npx skills add SidekicksStudio/marketing-agency-in-a-box
 
 # Install specific skills
-npx skills add coreyhaines31/marketingskills --skill cro copywriting
+npx skills add SidekicksStudio/marketing-agency-in-a-box --skill cro copywriting
 
 # List available skills
-npx skills add coreyhaines31/marketingskills --list
+npx skills add SidekicksStudio/marketing-agency-in-a-box --list
 ```
 
 This automatically installs to your `.agents/skills/` directory (and symlinks into `.claude/skills/` for Claude Code compatibility).
@@ -120,10 +127,10 @@ Install via Claude Code's built-in plugin system:
 
 ```bash
 # Add the marketplace
-/plugin marketplace add coreyhaines31/marketingskills
+/plugin marketplace add SidekicksStudio/marketing-agency-in-a-box
 
 # Install all marketing skills
-/plugin install marketing-skills
+/plugin install marketing-agency-in-a-box
 ```
 
 ### Option 3: Clone and Copy
@@ -131,8 +138,8 @@ Install via Claude Code's built-in plugin system:
 Clone the entire repo and copy the skills folder:
 
 ```bash
-git clone https://github.com/coreyhaines31/marketingskills.git
-cp -r marketingskills/skills/* .agents/skills/
+git clone https://github.com/SidekicksStudio/marketing-agency-in-a-box.git
+cp -r marketing-agency-in-a-box/skills/* .agents/skills/
 ```
 
 ### Option 4: Git Submodule
@@ -140,7 +147,7 @@ cp -r marketingskills/skills/* .agents/skills/
 Add as a submodule for easy updates:
 
 ```bash
-git submodule add https://github.com/coreyhaines31/marketingskills.git .agents/marketingskills
+git submodule add https://github.com/SidekicksStudio/marketing-agency-in-a-box.git .agents/marketing-agency-in-a-box
 ```
 
 Then reference skills from `.agents/marketingskills/skills/`.
@@ -157,13 +164,13 @@ Use [SkillKit](https://github.com/rohitg00/skillkit) to install skills across mu
 
 ```bash
 # Install all skills
-npx skillkit install coreyhaines31/marketingskills
+npx skillkit install SidekicksStudio/marketing-agency-in-a-box
 
 # Install specific skills
-npx skillkit install coreyhaines31/marketingskills --skill cro copywriting
+npx skillkit install SidekicksStudio/marketing-agency-in-a-box --skill cro copywriting
 
 # List available skills
-npx skillkit install coreyhaines31/marketingskills --list
+npx skillkit install SidekicksStudio/marketing-agency-in-a-box --list
 ```
 
 ## Upgrading from v1.x to v2.0
@@ -293,6 +300,18 @@ You can also invoke skills directly:
 - `marketing-psychology` - Mental models and psychology
 - `launch` - Product launches and announcements
 - `pricing` - Pricing, packaging, and monetization
+
+### Creator & Influencer Marketing
+- `creator-discovery` - Find TikTok, Instagram, and YouTube creators by niche (1k+ followers)
+- `creator-vetting` - Score creators on engagement rate, audience quality, brand safety, competitor conflicts
+- `creator-outreach` - Find business email, draft pitches for paid, gifted, and ambassador deals
+- `creator-brief` - Creative brief with deliverables, key message, FTC disclosure, and approval flow
+- `creator-contract` - Full contract with kill fee, usage rights, exclusivity, and FTC clause
+- `creator-reporting` - UTM + promo code setup, per-creator ROI, and campaign wrap report
+
+### Community & Organic Social
+- `reddit-outreach` - Find Reddit threads the product answers and draft help-first replies
+- `community-marketing` - Build and grow owned communities (Discord, Slack, Circle, forum)
 
 ### Sales & RevOps
 - `revops` - Lead lifecycle, scoring, routing, pipeline management
