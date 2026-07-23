@@ -8,6 +8,8 @@ Maintained by [Sidekicks Studio](https://github.com/SidekicksStudio). Built on t
 
 Run into a problem or have a question? [Open an issue](https://github.com/SidekicksStudio/marketing-agency-in-a-box/issues) — we're happy to help.
 
+> **In progress:** Sidekicks Studio is building a dashboard on top of these skills — a UI to view client docs, review and approve agent-proposed changes, and track activity across clients, backed by an MCP server agents can read from and write to. Skills here stay usable standalone in the meantime.
+
 ## What are Skills?
 
 Skills are markdown files that give AI agents specialized knowledge and workflows for specific tasks. When you add these to your project, your agent can recognize when you're working on a marketing task and apply the right frameworks and best practices.
